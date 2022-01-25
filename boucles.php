@@ -1,15 +1,8 @@
 <?php
 
-$resultat = "<ul>";
+$toto = 0;
 
-for ($i = -15946; $i < 32098; $i += 7) {
-    if ($i % 17 === 0) {
-        $resultat .= "<li>";
-        $resultat .= $i;
-        $resultat .= "</li>";
-    }
+while ($toto < 100) {
+    echo $toto . "<br />";
+    $toto++;
 }
-
-$resultat .= "</ul>";
-
-echo $resultat;
