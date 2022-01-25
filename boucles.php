@@ -2,7 +2,7 @@
 
 $toto = 0;
 
-while ($toto < 100) {
-    echo $toto . "<br />";
+do {
+    echo $toto;
     $toto++;
-}
+} while ($toto < 100);
