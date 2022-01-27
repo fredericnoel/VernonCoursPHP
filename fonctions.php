@@ -25,3 +25,31 @@ function volParAvecSurface(float $x, float $y, float $z): float
     $volume = abs($z) * surfaceRectangle($x, $y);
     return $volume;
 }
+
+function dump($param)
+{
+    echo "<pre>";
+    var_dump($param);
+    echo "</pre>";
+}
+
+function afficherTableau(array $tableau): string
+{
+    $resultat = "<ul>";
+
+    for ($i = 0; $i < count($tableau); $i++) {
+        $resultat .= "<li>";
+
+        if (is_array($tableau[$i])) {
+            $resultat .= afficherTableau($tableau[$i]);
+        } else {
+            $resultat .= $tableau[$i];
+        }
+
+        $resultat .= "</li>";
+    }
+
+    $resultat .= "</ul>";
+
+    return $resultat;
+}
