@@ -1,3 +1,6 @@
 <?php
 
-$test = 42;
+
+require_once 'variables.php';
+
+echo $test;

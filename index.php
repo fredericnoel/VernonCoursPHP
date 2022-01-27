@@ -1,5 +1,9 @@
 <?php
 
+require_once 'fonctions.php';
+
+$truc = bonjourPersonnalisee("Michel");
+
 $valeur = 42;
 $resultat = "";
 
