@@ -1,6 +1,9 @@
 <?php
 
 require_once 'fonctions.php';
+require_once 'constantes.php';
+
+var_dump(TVA);
 
 $surface = surfaceRectangle(10, 22.5);
 var_dump($surface);
