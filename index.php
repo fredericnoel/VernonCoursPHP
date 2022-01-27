@@ -3,6 +3,11 @@
 require_once 'fonctions.php';
 require_once 'constantes.php';
 
+echo "<p>Afficher n° ligne : " . __DIR__ . "</p>";
+// __FILE__ : chemin fichier + nom complet
+// __DIR__ : nom du dossier dans lequel se trouve le fichier
+// __FUNCTION__ : contient le nom de la fonction
+
 var_dump(TVA);
 
 $surface = surfaceRectangle(10, 22.5);
