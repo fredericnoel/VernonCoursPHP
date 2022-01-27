@@ -53,3 +53,12 @@ function afficherTableau(array $tableau): string
 
     return $resultat;
 }
+
+function factorielle(int $nombre): int
+{
+    if ($nombre === 0) {
+        return 1;
+    } else {
+        return $nombre * factorielle($nombre - 1);
+    }
+}

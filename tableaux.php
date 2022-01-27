@@ -9,3 +9,5 @@ $ages = [56, 42, 20, $eleves];
 dump($ages);
 
 echo afficherTableau($ages);
+
+echo factorielle(10);
