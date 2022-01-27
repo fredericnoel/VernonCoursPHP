@@ -2,6 +2,9 @@
 
 require_once 'fonctions.php';
 
+$surface = surfaceRectangle(10, 22.5);
+var_dump($surface);
+
 $truc = bonjourPersonnalisee("Michel");
 
 $valeur = 42;
